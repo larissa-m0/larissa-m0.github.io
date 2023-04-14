@@ -1,0 +1,69 @@
+/*Arquivo principal contendo o código CSS*/
+
+body{
+  background-color:antiquewhite;
+}
+
+h1{
+/* BORDER: borda do retângulo que o texto fica dentro
+   MARGIN: margem entre o retângulo e os elementos em volta
+   PADDING: mexe com o espaço dentro do retângulo */
+  color: black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  background-color: darkgreen;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+ul{
+  list-style-type: none; 
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #111;
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+li{
+  float: left; /* Coloca os elementos um ao lado do outro */
+
+}
+
+li a{
+  display: block; /* Permite a especificação do padding */
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px 30px; /* Coloca espaço entre os elementos dentro de <a> */
+  text-decoration: none; /* Tira a decoração do link*/
+}
+
+li a:hover:not(.active){
+  background-color: #333;
+
+}
+.active{
+  background-color:forestgreen;
+}
+#bemvindo{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:xx-large;
+  color:darkolivegreen;
+  text-align: center;
+}
+#plista{ /* Paragráfo sobre a lista alfabética */
+  font-family: monospace;
+  font-size:x-large;
+  text-align: center;
+}
+#abclista{ /* (h3) Lista alfabética */
+  font-family: monospace;
+  font-size:xx-large;
+  text-align: center;
+}
