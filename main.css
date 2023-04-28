@@ -4,7 +4,7 @@ body{
   background-color:antiquewhite;
 }
 
-h1{
+header{
 /* BORDER: borda do retângulo que o texto fica dentro
    MARGIN: margem entre o retângulo e os elementos em volta
    PADDING: mexe com o espaço dentro do retângulo */
@@ -12,19 +12,18 @@ h1{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
   background-color: darkgreen;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 ul{
   list-style-type: none; 
-  margin: 0px;
+  margin: auto;
   padding: 0px;
   overflow: hidden;
   background-color: #111;
-
   position: sticky;
   top: 0;
   width: 100%;
@@ -36,26 +35,57 @@ li{
 }
 
 li a{
-  display: block; /* Permite a especificação do padding */
+  display: inline-block; /* Permite a especificação do padding */
   color: white;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   padding: 15px 30px; /* Coloca espaço entre os elementos dentro de <a> */
   text-decoration: none; /* Tira a decoração do link*/
 }
 
 li a:hover:not(.active){
   background-color: #333;
-
 }
 .active{
   background-color:forestgreen;
+
+/* Formatação da página de início */
 }
 #bemvindo{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size:xx-large;
   color:darkolivegreen;
   text-align: center;
+}
+.img-inicio{
+  text-align: center;
+  /*margin-left: 200px;
+  margin-right: 100px;*/
+
+}
+.introducao{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+  text-align: center;
+  color: black;
+  text-justify:auto;
+  margin-bottom: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.lista-alfabetica{
+  background-color: #CCBCA7;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #726348;
+  border-width: 1px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 290px; /*500px*/
+  margin-right: 290px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 #plista{ /* Paragráfo sobre a lista alfabética */
   font-family: monospace;
@@ -64,6 +94,53 @@ li a:hover:not(.active){
 }
 #abclista{ /* (h3) Lista alfabética */
   font-family: monospace;
-  font-size:xx-large;
+  font-size:xx-large  ;
   text-align: center;
+  
+}
+#abclista a{
+  text-decoration: none;
+  color:rgb(121, 78, 58);
+}
+#end-img{
+  display: block;
+  width: 900px;
+  margin: auto;
+}
+
+footer {
+  display:block;
+  text-align: center;
+  padding: 3px;
+  background-color:darkgreen;
+  color:black;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+/*#footer-img {
+  float: right;
+  padding: 10x;
+}*/
+
+/*Formatação da página de espécies*/
+
+.indice-h1{
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: forestgreen;
+}
+.especies{
+  margin-left: 200px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.imagens{
+  display: block;
+  width: 700px;
+  margin: auto;
+}
+.texto-especies{
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: medium;
+
 }
