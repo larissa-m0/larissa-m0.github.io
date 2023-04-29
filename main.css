@@ -1,13 +1,18 @@
-/*Arquivo principal contendo o código CSS*/
+/* Arquivo principal contendo o código CSS */
 
 body{
   background-color:antiquewhite;
+  margin: 0%;
 }
-
+/*.div-principal{
+  background-color:antiquewhite;
+  width: 70%;
+  margin: auto;
+} */
 header{
-/* BORDER: borda do retângulo que o texto fica dentro
-   MARGIN: margem entre o retângulo e os elementos em volta
-   PADDING: mexe com o espaço dentro do retângulo */
+/* BORDER: borda da caixa que o texto fica dentro
+   MARGIN: margem entre a caixa e os elementos em volta
+   PADDING: mexe com o espaço dentro da caixa */
   color: black;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
@@ -17,7 +22,9 @@ header{
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
+#menu{
+  text-align: center;
+}
 ul{
   list-style-type: none; 
   margin: auto;
@@ -28,12 +35,9 @@ ul{
   top: 0;
   width: 100%;
 }
-
 li{
   float: left; /* Coloca os elementos um ao lado do outro */
-
 }
-
 li a{
   display: inline-block; /* Permite a especificação do padding */
   color: white;
@@ -42,7 +46,6 @@ li a{
   padding: 15px 30px; /* Coloca espaço entre os elementos dentro de <a> */
   text-decoration: none; /* Tira a decoração do link*/
 }
-
 li a:hover:not(.active){
   background-color: #333;
 }
@@ -57,10 +60,8 @@ li a:hover:not(.active){
   color:darkolivegreen;
   text-align: center;
 }
-.img-inicio{
+#img-inicio{
   text-align: center;
-  /*margin-left: 200px;
-  margin-right: 100px;*/
 
 }
 .introducao{
@@ -96,51 +97,103 @@ li a:hover:not(.active){
   font-family: monospace;
   font-size:xx-large  ;
   text-align: center;
-  
 }
 #abclista a{
   text-decoration: none;
   color:rgb(121, 78, 58);
 }
-#end-img{
+#end-img{ /* Imagem no fim da página de início */
   display: block;
   width: 900px;
   margin: auto;
 }
-
-footer {
-  display:block;
+#quote{ /* Citação no final da página */
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
   text-align: center;
-  padding: 3px;
-  background-color:darkgreen;
-  color:black;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-size:large;
 }
-/*#footer-img {
-  float: right;
-  padding: 10x;
-}*/
+
+footer{ 
+  display: table;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  background-color:black;
+  color:white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer dt{
+font-size: large;
+}
+footer dd{
+  margin-left: 0%;
+}
+footer img{
+  float: left;
+  margin-left: 20px;
+  width: 270px;
+  height: 150px;}
+footer a {
+  color: white;
+}
+footer img, footer dl{
+  display: table-cell;
+  vertical-align: middle;
+}
 
 /*Formatação da página de espécies*/
 
-.indice-h1{
+.indice-h1{ /* Título das páginas de espécie */
   text-align: center;
   margin-bottom: 10px;
   margin-top: 20px;
   color: forestgreen;
 }
-.especies{
+.especies{ /* Nome e link da página contendo informações sobre a espécie */
   margin-left: 200px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-.imagens{
+.imagens{ 
   display: block;
   width: 700px;
   margin: auto;
 }
-.texto-especies{
+.texto-especies{ /* Formatação padrão dos textos sobre as espécies */
   color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: medium;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
+/* Formatação da página de períodos de tempo */
+
+.eras-h1{
+  color: darkgreen;
+  margin-left: 40px;
+}
+table{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 70px;
+}
+td, th{
+  border: 2px solid black;
+  text-align: center;
+  padding: 8px;
+}
+.tr1{
+  background-color: darkolivegreen;
+}
+.tr2{
+  background-color:darkolivegreen;
+}
+.tr3{
+  background-color:darkolivegreen;
 }
